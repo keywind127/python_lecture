@@ -58,6 +58,8 @@ def add_integers(val_1, val_2):
     # your code here
     # :)
     # ;)
+    assert isinstance(val_1,int)
+    assert isinstance(val_2,int)
     return val_1 + val_2
 
 print(add_integers(2, "2"))
