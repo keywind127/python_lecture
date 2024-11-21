@@ -42,6 +42,8 @@ def reset_to_zero():
     # after calling the nested function
     local_var = 11
     def nested_function():
+        global global_var
+        nonlocal local_var
         local_var = 0
         global_var = 0 
     nested_function()

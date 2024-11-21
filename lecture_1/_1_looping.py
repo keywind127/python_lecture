@@ -41,6 +41,6 @@ print("Example 4:")
 # like: (0, 1) (1, 3) (2, 5) (3, 7) (4, 9)
 
 for ind,val in enumerate(my_array):
-    print(f"({ind}, {val})", end=" ")
+    print((ind, val), end=" ")
 
 print("\n")
