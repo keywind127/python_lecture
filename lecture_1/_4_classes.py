@@ -72,6 +72,9 @@ class Student(User):
     # implement your code here
     # :)
     # :)
+    @property
+    def student_info(self):
+        return self.name,self.sid
     
 student = Student("Kevin", 127)
 
