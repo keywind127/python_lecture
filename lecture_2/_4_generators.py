@@ -38,14 +38,14 @@ print(next((name for name in male_names if name != "")))
 # and "reversed"
 
 def filter_names(names):
-    # your code here
-    # :)
-    # ;)
-    pass
+    for name in reversed(names):
+        if name != "":
+            yield name
 
 male_names = ["kevin", "david", "", "daniel"]
 female_names = ["lydia", "gloria", "", ""]
 
+print("Example 4:")
 for name in filter_names(male_names):
     print(name)
 

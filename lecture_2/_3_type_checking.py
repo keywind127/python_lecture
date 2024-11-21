@@ -56,6 +56,8 @@ log_result(greet)
 
 def add_integers(val_1, val_2):
     # your code here
+    assert isinstance(val_1, type)
+    assert isinstance(val_2, type)
     # :)
     # ;)
     return val_1 + val_2
