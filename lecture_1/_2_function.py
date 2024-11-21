@@ -42,7 +42,9 @@ def reset_to_zero():
     # after calling the nested function
     local_var = 11
     def nested_function():
+        nonlocal local_var 
         local_var = 0
+        global global_var 
         global_var = 0 
     nested_function()
     print(f"\tLocal variable: {local_var}")
