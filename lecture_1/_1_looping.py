@@ -40,4 +40,9 @@ print("Example 4:")
 # print out their indices and values
 # like: (0, 1) (1, 3) (2, 5) (3, 7) (4, 9)
 
+for i, x in enumerate(my_array):
+    # i: index
+    # x: value: my_array[i]
+    print((i, x), end=" ")
+
 print("\n")
