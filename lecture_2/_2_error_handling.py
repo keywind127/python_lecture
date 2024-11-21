@@ -58,6 +58,8 @@ def divide_number(num_1, num_2):
     # your code here
     # your code here 
     # :)
+    except NegativeDivisor:
+        logging.error("Negative divisor!!!")
     return None
 
 print(divide_number(1, -1))
