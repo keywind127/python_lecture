@@ -31,12 +31,14 @@ import logging
 
 logging.basicConfig(
     filename="logs.log", 
-    level=logging.INFO # change flag to your respective level
+    level=logging.WARN # change flag to your respective level
 )
 
 def add_numbers(num_1, num_2):
     res = num_1 + num_2
     # implement your code here
+    if res > 4:
+        logging.warning(f"The sum is over 4 !! (sum:{res})")
     return res
 
 print("Example 3: {}\n".format(add_numbers(2, 3)))

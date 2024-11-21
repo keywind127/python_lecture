@@ -56,7 +56,8 @@ def divide_number(num_1, num_2):
     except TypeError:
         logging.error("Type unsupported!")
     # your code here
-    # your code here 
+    except NegativeDivisor:
+        logging.error("Negative divisor detected!")
     # :)
     return None
 
