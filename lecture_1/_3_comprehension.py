@@ -48,3 +48,7 @@ print(f"Example 3: {result}\n")
 # implement your code here
 # :)
 # ;)
+result =[ (i ** 2 + j) for i in range(1, 11) for j in range(10) if j % 2
+]
+
+print(f"Example 4: {result}\n")
