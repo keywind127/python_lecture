@@ -70,21 +70,21 @@ print(Utils().multiply_consecutive([1, 2, 3, 4]))
 
 class Utils:
     def for_consecutive(function):
-        def funct(self, array): # <- change here
+        def funct(cls, array): # <- change here
             result = []
             for i in range(1, len(array)):
-                result.append(function(self, array[i-1], array[i])) # <- change here
+                result.append(function(cls, array[i-1], array[i])) # <- change here
             return result
         return funct
 
-    # <- change here
+    @classmethod
     @for_consecutive
-    def add_consecutive(self, val_1, val_2): # <- change here
+    def add_consecutive(cls, val_1, val_2): # <- change here
         return val_1 + val_2
 
-    # <- change here
+    @classmethod
     @for_consecutive
-    def multiply_consecutive(self, val_1, val_2): # <- change here
+    def multiply_consecutive(cls, val_1, val_2): # <- change here
         return val_1 * val_2
 
 print(Utils.add_consecutive([1, 2, 3, 4]))
