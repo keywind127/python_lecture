@@ -78,11 +78,13 @@ class Utils:
         return funct
 
     # <- change here
+    @classmethod
     @for_consecutive
     def add_consecutive(self, val_1, val_2): # <- change here
         return val_1 + val_2
 
     # <- change here
+    @classmethod
     @for_consecutive
     def multiply_consecutive(self, val_1, val_2): # <- change here
         return val_1 * val_2
