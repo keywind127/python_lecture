@@ -1,35 +1,35 @@
-## example 1
+# ## example 1
 
-def filter_names(names):
-    for name in names:
-        if name != "":
-            yield name
+# def filter_names(names):
+#     for name in names:
+#         if name != "":
+#             yield name
 
-male_names = ["kevin", "david", "", "daniel"]
-female_names = ["lydia", "gloria", "", ""]
+# male_names = ["kevin", "david", "", "daniel"]
+# female_names = ["lydia", "gloria", "", ""]
 
-for name in filter_names(male_names):
-    print(name)
+# for name in filter_names(male_names):
+#     print(name)
 
-for name in filter_names(female_names):
-    print(name)
+# for name in filter_names(female_names):
+#     print(name)
 
-## example 2
+# ## example 2
 
-male_names = ["kevin", "david", "", "daniel"]
-female_names = ["lydia", "gloria", "", ""]
+# male_names = ["kevin", "david", "", "daniel"]
+# female_names = ["lydia", "gloria", "", ""]
 
-for name in (name for name in male_names if name != ""):
-    print(name)
+# for name in (name for name in male_names if name != ""):
+#     print(name)
 
-for name in (name for name in female_names if name != ""):
-    print(name)
+# for name in (name for name in female_names if name != ""):
+#     print(name)
 
-## example 3
+# ## example 3
 
-male_names = ["", "kevin", "david", "", "daniel"]
+# male_names = ["", "kevin", "david", "", "daniel"]
 
-print(next((name for name in male_names if name != "")))
+# print(next((name for name in male_names if name != "")))
 
 ## example 4
 
@@ -38,10 +38,9 @@ print(next((name for name in male_names if name != "")))
 # and "reversed"
 
 def filter_names(names):
-    # your code here
-    # :)
-    # ;)
-    pass
+    for name in reversed(names):
+        if name != "":
+            yield name
 
 male_names = ["kevin", "david", "", "daniel"]
 female_names = ["lydia", "gloria", "", ""]
