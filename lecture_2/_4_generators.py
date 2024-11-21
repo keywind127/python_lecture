@@ -41,7 +41,9 @@ def filter_names(names):
     # your code here
     # :)
     # ;)
-    pass
+    for i in reversed(range(len(names))):
+        if names[i] != "":
+            yield names[i]
 
 male_names = ["kevin", "david", "", "daniel"]
 female_names = ["lydia", "gloria", "", ""]
